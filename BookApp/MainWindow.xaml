@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:BookApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Loaded="Window_Loaded"
+        Title="MainWindow" Height="450" Width="800"
+        WindowStartupLocation="CenterScreen">
     <Grid>
-        
+        <ListBox x:Name="lbxBooks" HorizontalAlignment="Left" Height="334" Margin="43,37,0,0" VerticalAlignment="Top" Width="416"/>
+        <TextBox x:Name="tbxSearch" HorizontalAlignment="Left" Height="44" Margin="498,37,0,0" TextWrapping="Wrap" Text="Search book titles" VerticalAlignment="Top" Width="273" TextChanged="TbxSearch_TextChanged"/>
+        <Button x:Name="btnAdd" Content="Add book" HorizontalAlignment="Left" Margin="498,187,0,0" VerticalAlignment="Top" Width="133" Height="30" Click="BtnAdd_Click"/>
+        <Button x:Name="btnDelete" Content="Delete" HorizontalAlignment="Left" Margin="659,187,0,0" VerticalAlignment="Top" Width="112" Height="30" Click="BtnDelete_Click"/>
+        <ComboBox x:Name="cbxFilter" HorizontalAlignment="Left" Margin="498,103,0,0" VerticalAlignment="Top" Width="273" Height="40" SelectionChanged="CbxFilter_SelectionChanged"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="498,264,0,0" VerticalAlignment="Top" Width="133" Height="34" Click="BtnSave_Click"/>
+        <Button x:Name="btnLoad" Content="Load" HorizontalAlignment="Left" Margin="659,264,0,0" VerticalAlignment="Top" Width="112" Height="34" Click="BtnLoad_Click"/>
+
     </Grid>
 </Window>
